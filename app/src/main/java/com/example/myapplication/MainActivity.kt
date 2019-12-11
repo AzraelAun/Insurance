@@ -18,9 +18,13 @@ class MainActivity : AppCompatActivity() {
         btnReset.setOnClickListener() {
             spinnerAge.setSelection(0)
             radioGroup.clearCheck()
+            textView7.setText(" ")
+            checkBox.setChecked(false)
         }
 
     }
+
+   
 
     fun getPremium():Double{
         return when(spinnerAge.selectedItemPosition){
